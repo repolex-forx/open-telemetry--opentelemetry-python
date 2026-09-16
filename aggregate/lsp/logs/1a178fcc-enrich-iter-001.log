@@ -1,0 +1,98 @@
+[2026-09-16T20:13:16Z] === ENRICH ITERATION 1 START | repo=open-telemetry/opentelemetry-python sha=1a178fcc ===
+[2026-09-16T20:13:16Z] [iter=1] PHASE START: enrich repo=open-telemetry/opentelemetry-python sha=1a178fcc runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/1a178fcc-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/1a178fcc5c689516849ced80fb2533fe7db7a80f.nq.gz
+[2026-09-16T20:13:21Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-16T20:13:51Z] [iter=1] AST store loaded triples=3423132 load_secs=29 mem_mb=1056 MB
+[2026-09-16T20:13:51Z] [iter=1] Step 2: Finding LSP targets mem_mb=1056 MB
+[2026-09-16T20:14:03Z] [iter=1] LSP targets found call_sites=23122 imports=0 extends=0 implements=0 secs=12
+[2026-09-16T20:14:14Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1056 MB
+[2026-09-16T20:14:35Z] [iter=1] Position index built positions=236373 nodes_with_types=307189 secs=22 mem_mb=1056 MB
+[2026-09-16T20:14:35Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1056 MB already_completed_types=[] already_completed_files=0
+[2026-09-16T20:14:35Z] [iter=1] Resolving target type target_type=call_site count=23122
+[2026-09-16T20:14:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=0 resolved=0 errors=0 current=opentelemetry-sdk/tests/metrics/test_aggregation.py
+[2026-09-16T20:15:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=1 resolved=158 errors=53 current=opentelemetry-sdk/tests/metrics/exponential_histogram/test_exponent_mapping.py
+[2026-09-16T20:17:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.3 files_done=3 resolved=345 errors=119 current=codegen/opentelemetry-codegen-json/tests/test_serde.py
+[2026-09-16T20:20:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.8 files_done=7 resolved=691 errors=217 current=exporter/opentelemetry-exporter-otlp-proto-http/src/opentelemetry/exporter/otlp/proto/http/metric_exporter/__init__.py
+[2026-09-16T20:20:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=10 resolved=858 errors=242 current=exporter/opentelemetry-exporter-otlp-proto-grpc/tests/test_otlp_metrics_exporter.py
+[2026-09-16T20:22:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.8 files_done=11 resolved=949 errors=296 current=opentelemetry-sdk/src/opentelemetry/sdk/_configuration/_meter_provider.py
+[2026-09-16T20:23:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=12 resolved=959 errors=344 current=exporter/opentelemetry-exporter-prometheus/tests/test_prometheus_exporter.py
+[2026-09-16T20:23:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.5 files_done=15 resolved=1259 errors=367 current=docs/examples/auto-instrumentation/server_manual.py
+[2026-09-16T20:27:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.3 files_done=17 resolved=1359 errors=523 current=opentelemetry-sdk/src/opentelemetry/sdk/_logs/_internal/__init__.py
+[2026-09-16T20:28:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.3 files_done=18 resolved=1432 errors=563 current=opentelemetry-sdk/tests/trace/test_trace.py
+[2026-09-16T20:30:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.0 files_done=19 resolved=2058 errors=629 current=opentelemetry-api/src/opentelemetry/util/_importlib_metadata.py
+[2026-09-16T20:31:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.9 files_done=21 resolved=2145 errors=664 current=opentelemetry-sdk/src/opentelemetry/sdk/metrics/_internal/aggregation.py
+[2026-09-16T20:33:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.3 files_done=22 resolved=2207 errors=763 current=opentelemetry-semantic-conventions/src/opentelemetry/semconv/_incubating/metrics/hw_metrics.py
+[2026-09-16T20:34:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.3 files_done=25 resolved=2529 errors=800 current=opentelemetry-sdk/src/opentelemetry/sdk/_configuration/_propagator.py
+[2026-09-16T20:35:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.0 files_done=28 resolved=2670 errors=829 current=exporter/opentelemetry-exporter-zipkin/tests/test_zipkin.py
+[2026-09-16T20:35:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.7 files_done=34 resolved=2824 errors=858 current=opentelemetry-sdk/src/opentelemetry/sdk/_shared_internal/__init__.py
+[2026-09-16T20:36:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.3 files_done=37 resolved=3095 errors=883 current=opentelemetry-sdk/tests/_configuration/test_tracer_provider.py
+[2026-09-16T20:37:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.1 files_done=39 resolved=3288 errors=913 current=opentelemetry-sdk/tests/logs/test_export.py
+[2026-09-16T20:37:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.7 files_done=41 resolved=3523 errors=937 current=opentelemetry-api/src/opentelemetry/metrics/_internal/__init__.py
+[2026-09-16T20:39:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.0 files_done=42 resolved=3545 errors=990 current=opentelemetry-sdk/src/opentelemetry/sdk/_configuration/__init__.py
+[2026-09-16T20:40:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.2 files_done=43 resolved=3613 errors=1043 current=opentelemetry-proto-json/src/opentelemetry/proto_json/_json_codec.py
+[2026-09-16T20:42:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.9 files_done=46 resolved=3866 errors=1112 current=shim/opentelemetry-opentracing-shim/tests/test_shim.py
+[2026-09-16T20:42:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.5 files_done=49 resolved=4110 errors=1132 current=opentelemetry-api/tests/propagators/test_propagators.py
+[2026-09-16T20:43:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.4 files_done=51 resolved=4244 errors=1170 current=codegen/opentelemetry-codegen-json/src/opentelemetry/codegen/json/writer.py
+[2026-09-16T20:44:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.5 files_done=52 resolved=4262 errors=1213 current=docs/examples/auto-instrumentation/server_automatic.py
+[2026-09-16T20:46:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.2 files_done=57 resolved=4334 errors=1280 current=opentelemetry-sdk/tests/metrics/test_periodic_exporting_metric_reader.py
+[2026-09-16T20:47:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.1 files_done=59 resolved=4416 errors=1314 current=opentelemetry-sdk/src/opentelemetry/sdk/trace/_sampling_experimental/_trace_state.py
+[2026-09-16T20:47:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.7 files_done=62 resolved=4642 errors=1339 current=opentelemetry-sdk/tests/_configuration/test_propagator.py
+[2026-09-16T20:50:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.4 files_done=67 resolved=4827 errors=1449 current=opentelemetry-sdk/tests/logs/test_handler.py
+[2026-09-16T20:51:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.4 files_done=68 resolved=4998 errors=1491 current=tests/opentelemetry-docker-tests/tests/opencensus/test_opencensusexporter_functional.py
+[2026-09-16T20:52:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.0 files_done=73 resolved=5136 errors=1517 current=docs/examples/opentracing/rediscache.py
+[2026-09-16T20:52:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.6 files_done=79 resolved=5346 errors=1538 current=.github/workflows/generate_workflows.py
+[2026-09-16T20:53:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.6 files_done=83 resolved=5592 errors=1576 current=exporter/opentelemetry-exporter-otlp-proto-grpc/tests/test_otlp_trace_exporter.py
+[2026-09-16T20:55:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.1 files_done=89 resolved=5962 errors=1637 current=opentelemetry-sdk/tests/metrics/test_view_instrument_match.py
+[2026-09-16T20:55:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.6 files_done=93 resolved=6112 errors=1658 current=opentelemetry-sdk/tests/metrics/integration_test/test_exemplars.py
+[2026-09-16T20:57:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.8 files_done=98 resolved=6260 errors=1704 current=shim/opentelemetry-opentracing-shim/tests/testbed/test_active_span_replacement/test_asyncio.py
+[2026-09-16T20:59:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.6 files_done=100 resolved=6346 errors=1822 current=opentelemetry-api/tests/metrics/test_subclass_instantiation.py
+[2026-09-16T21:00:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.1 files_done=103 resolved=6441 errors=1845 current=shim/opentelemetry-opentracing-shim/tests/testbed/test_common_request_handler/test_asyncio.py
+[2026-09-16T21:01:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.9 files_done=104 resolved=6472 errors=1876 current=opentelemetry-sdk/src/opentelemetry/sdk/resources/__init__.py
+[2026-09-16T21:02:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.5 files_done=107 resolved=6547 errors=1944 current=tests/opentelemetry-test-utils/tests/test_utils.py
+[2026-09-16T21:03:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.4 files_done=114 resolved=6701 errors=1980 current=opentelemetry-proto-json/src/opentelemetry/proto_json/common/v1/common.py
+[2026-09-16T21:04:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.2 files_done=115 resolved=6726 errors=2014 current=opentelemetry-sdk/tests/trace/composite_sampler/test_rule_based.py
+[2026-09-16T21:05:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.8 files_done=117 resolved=6749 errors=2039 current=opentelemetry-sdk/tests/trace/composite_sampler/test_sampler.py
+[2026-09-16T21:05:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.4 files_done=119 resolved=6761 errors=2063 current=opentelemetry-sdk/tests/events/test_events.py
+[2026-09-16T21:06:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.4 files_done=122 resolved=6883 errors=2102 current=docs/examples/logs/example.py
+[2026-09-16T21:07:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.0 files_done=129 resolved=7072 errors=2126 current=opentelemetry-sdk/tests/metrics/test_exemplarreservoir.py
+[2026-09-16T21:10:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.5 files_done=133 resolved=7259 errors=2271 current=opentelemetry-sdk/tests/logs/test_sdk_metrics.py
+[2026-09-16T21:11:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.0 files_done=135 resolved=7293 errors=2295 current=exporter/opentelemetry-exporter-zipkin-json/src/opentelemetry/exporter/zipkin/json/v1/__init__.py
+[2026-09-16T21:11:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.7 files_done=143 resolved=7425 errors=2320 current=opentelemetry-sdk/src/opentelemetry/sdk/trace/_sampling_experimental/_always_on.py
+[2026-09-16T21:12:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.5 files_done=145 resolved=7449 errors=2354 current=codegen/opentelemetry-codegen-json/tests/test_protobuf_compatibility.py
+[2026-09-16T21:13:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.0 files_done=149 resolved=7493 errors=2377 current=exporter/opentelemetry-exporter-zipkin-json/tests/encoder/test_v2_json.py
+[2026-09-16T21:14:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.8 files_done=159 resolved=7687 errors=2407 current=propagator/opentelemetry-propagator-b3/src/opentelemetry/propagators/b3/__init__.py
+[2026-09-16T21:14:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.6 files_done=162 resolved=7738 errors=2438 current=codegen/opentelemetry-codegen-json/tests/conftest.py
+[2026-09-16T21:15:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.7 files_done=168 resolved=7876 errors=2483 current=opentelemetry-api/tests/attributes/test_attributes.py
+[2026-09-16T21:17:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.2 files_done=169 resolved=7945 errors=2548 current=opentelemetry-semantic-conventions/src/opentelemetry/semconv/_incubating/metrics/otel_metrics.py
+[2026-09-16T21:18:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.9 files_done=175 resolved=8008 errors=2574 current=opentelemetry-sdk/src/opentelemetry/sdk/metrics/_internal/point.py
+[2026-09-16T21:18:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.7 files_done=178 resolved=8067 errors=2607 current=shim/opentelemetry-opentracing-shim/tests/testbed/testcase.py
+[2026-09-16T21:20:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.7 files_done=183 resolved=8156 errors=2651 current=opentelemetry-api/tests/logs/test_logger_provider.py
+[2026-09-16T21:20:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.6 files_done=186 resolved=8191 errors=2687 current=opentelemetry-proto/src/opentelemetry/proto/collector/profiles/v1development/profiles_service_pb2.py
+[2026-09-16T21:21:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.2 files_done=190 resolved=8249 errors=2712 current=exporter/opentelemetry-exporter-otlp-proto-http/src/opentelemetry/exporter/otlp/proto/http/_log_exporter/__init__.py
+[2026-09-16T21:22:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.4 files_done=193 resolved=8323 errors=2762 current=opentelemetry-api/tests/propagators/test_composite.py
+[2026-09-16T21:23:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.0 files_done=197 resolved=8366 errors=2786 current=opentelemetry-semantic-conventions/src/opentelemetry/semconv/_incubating/attributes/db_attributes.py
+[2026-09-16T21:24:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.0 files_done=202 resolved=8438 errors=2826 current=docs/getting_started/tests/test_tracing.py
+[2026-09-16T21:24:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.7 files_done=204 resolved=8457 errors=2855 current=opentelemetry-sdk/tests/logs/test_logger_provider_cache.py
+[2026-09-16T21:25:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.2 files_done=207 resolved=8522 errors=2876 current=exporter/opentelemetry-exporter-otlp-proto-common/tests/test_attribute_encoder.py
+[2026-09-16T21:26:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.7 files_done=213 resolved=8700 errors=2896 current=opentelemetry-api/tests/trace/test_tracestate.py
+[2026-09-16T21:26:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.3 files_done=216 resolved=8759 errors=2918 current=docs/examples/opencensus-shim/app.py
+[2026-09-16T21:27:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.8 files_done=224 resolved=8815 errors=2938 current=opentelemetry-sdk/tests/metrics/test_in_memory_metric_reader.py
+[2026-09-16T21:27:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.4 files_done=227 resolved=8900 errors=2960 current=opentelemetry-api/tests/util/test__importlib_metadata.py
+[2026-09-16T21:28:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.9 files_done=237 resolved=9074 errors=2980 current=opentelemetry-sdk/tests/_configuration/file/test_env_substitution.py
+[2026-09-16T21:28:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.4 files_done=241 resolved=9134 errors=3002 current=opentelemetry-sdk/tests/trace/export/test_in_memory_span_exporter.py
+[2026-09-16T21:29:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.0 files_done=259 resolved=9258 errors=3023 current=docs/getting_started/tests/test_otlpcollector.py
+[2026-09-16T21:29:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.5 files_done=266 resolved=9296 errors=3046 current=opentelemetry-sdk/src/opentelemetry/sdk/trace/_sampling_experimental/_traceid_ratio.py
+[2026-09-16T21:30:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.1 files_done=274 resolved=9363 errors=3069 current=opentelemetry-sdk/tests/metrics/test_backward_compat.py
+[2026-09-16T21:31:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.7 files_done=281 resolved=9442 errors=3094 current=opentelemetry-proto/src/opentelemetry/proto/metrics/v1/metrics_pb2.py
+[2026-09-16T21:31:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.3 files_done=297 resolved=9541 errors=3116 current=opentelemetry-semantic-conventions/src/opentelemetry/semconv/_incubating/metrics/http_metrics.py
+[2026-09-16T21:32:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.9 files_done=304 resolved=9565 errors=3140 current=opentelemetry-sdk/tests/trace/composite_sampler/test_traceid_ratio.py
+[2026-09-16T21:32:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.7 files_done=315 resolved=9619 errors=3171 current=opentelemetry-api/tests/context/test_contextvars_context.py
+[2026-09-16T21:33:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.2 files_done=333 resolved=9707 errors=3192 current=docs/examples/metrics/reader/preferred_aggregation.py
+[2026-09-16T21:33:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.7 files_done=345 resolved=9767 errors=3212 current=opentelemetry-sdk/src/opentelemetry/sdk/util/_configurator.py
+[2026-09-16T21:34:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.3 files_done=360 resolved=9825 errors=3233 current=opentelemetry-proto/src/opentelemetry/proto/profiles/v1development/profiles_pb2.py
+[2026-09-16T21:35:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.8 files_done=368 resolved=9847 errors=3253 current=shim/opentelemetry-opentracing-shim/tests/testbed/test_common_request_handler/request_handler.py
+[2026-09-16T21:35:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.3 files_done=380 resolved=9878 errors=3274 current=exporter/opentelemetry-exporter-zipkin-json/src/opentelemetry/exporter/zipkin/json/v2/__init__.py
+[2026-09-16T21:36:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.9 files_done=386 resolved=9895 errors=3296 current=exporter/opentelemetry-exporter-zipkin-json/src/opentelemetry/exporter/zipkin/node_endpoint.py
+[2026-09-16T21:36:23Z] [iter=1] Target type resolved target_type=call_site resolved=9983 errors=3303 secs=4908 mem_mb=1056 MB
+[2026-09-16T21:36:45Z] [iter=1] Step 5: Writing final enrichment file triples=199080
+[2026-09-16T21:36:49Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/1a178fcc5c689516849ced80fb2533fe7db7a80f.nq.gz size_kb=5670
+[2026-09-16T21:36:50Z] [iter=1] PHASE END: enrich elapsed_s=5014 elapsed_min=83.6 total_triples=199080
